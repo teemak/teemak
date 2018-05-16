@@ -1,0 +1,214 @@
+.contact-container {
+    background: #ccc;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    border: 2px dotted red;
+}
+
+textarea {
+    height: 200px;
+    wrap: hard;
+}
+
+.form-container {
+    display: flex;
+    border: 1px solid black;
+}
+
+.bird-container {
+    min-width: 1000px;
+    background: lightblue;
+    position: relative;
+}
+
+.bird {
+    position: absolute;
+}
+
+.left-eye {    
+   height: 45px;
+   width: 45px;
+   background: white;
+   border-radius: 50%;
+   border: 1px solid black;
+   top: 56%;
+   left: 52%;
+   z-index: 3;
+}
+
+.left-eye:after {
+    content: "";
+    position: absolute;
+    height: 21px;
+    width: 21px;
+    top: 8px;
+    left: 2px;
+    background: black;
+    border-radius: 50%;
+}
+
+.right-eye {
+   height: 50px;
+   width: 50px;
+   background: white;
+   border-radius: 50%;
+   border: 1px solid black;
+   top: 57%;
+   left: 56%;
+   z-index: 3;
+}
+
+.right-eye:after {
+    content: "";
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    top: 8px;
+    left: 2px;
+    background: black;
+    border-radius: 50%;
+}
+
+.beak {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 100px solid black;
+    top: 59%;
+    left: 51%;
+    z-index: 2;
+    transform: rotate(38deg);
+}
+
+.beak:after {
+    content: "";
+    position: absolute;
+    border-left: 28px solid transparent;
+    border-right: 28px solid transparent;
+    border-top: 98px solid yellow;
+    top: -100px;
+    left: -28px;
+}
+
+.body {
+   height: 150px;
+   width: 150px;
+   background: #33ccff;
+   border-radius: 50%;
+   border: 1px solid black;
+   top: 50%;
+   left: 50%;
+   z-index: 1;
+}
+
+.left-wing {
+    width: 0;
+    height: 0;
+    border-left: 41px solid transparent;
+    border-right: 41px solid transparent;
+    border-top: 37px solid black;
+    border-radius: 50%;
+    top: 62%;
+    left: 46%;
+    transform: rotate(-52deg);
+}
+
+
+.left-wing:after {
+    content: "";
+    position: absolute;
+    border-left: 39px solid transparent;
+    border-right: 39px solid transparent;
+    border-top: 35px solid #33ccff;
+    border-radius: 50%;
+    top: -36px;
+    left: -39px;    
+}
+.right-wing {
+    width: 0;
+    height: 0;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    border-top: 42px solid black;
+    border-radius: 50%;
+    top: 65%;
+    left: 61%;
+    z-index: 4;
+    transform: rotate(50deg);
+}
+
+.right-wing:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 51px solid transparent;
+    border-right: 51px solid transparent;
+    border-top: 41px solid #33ccff;
+    border-radius: 50%;
+    top: -41px;
+    left: -52px;
+}
+
+
+.left-foot {
+    width: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid yellow;
+    top: 82%;
+    left: 51%;
+    transform: rotate(37deg);
+}
+
+.left-foot:before {
+    content: "";
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid yellow;
+}
+
+.left-foot:after {
+    content: "";
+    border-right: 15px solid transparent;
+    border-top: 30px solid yellow;
+    position: absolute;
+    top: -30px;
+    left: -15px;
+}
+
+.right-foot {
+    width: 0;
+    top: 83%;
+    left: 61%;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid yellow;
+    transform: rotate(-25deg);
+}
+
+.right-foot:before {
+    content: "";
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid yellow;
+}
+
+.right-foot:after {
+    content: "";
+    border-right: 15px solid transparent;
+    border-top: 30px solid yellow;
+    position: absolute;
+    top: -30px;
+    left: -15px;
+}
+

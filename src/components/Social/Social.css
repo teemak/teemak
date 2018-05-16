@@ -1,0 +1,38 @@
+.social-container {
+    height: 100vh;
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link-list {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    margin: 0;
+}
+
+
+.social-link-list li {
+    align-self: center;
+    font-size: 3em;
+}
+
+p.link {
+    display: inline;
+    text-align: start;
+    margin-left: 5%;
+}
+
+.link-style {
+    text-decoration: none;
+    margin-left: 25%;
+}
+
+.logo {
+    vertical-align: middle;
+}
