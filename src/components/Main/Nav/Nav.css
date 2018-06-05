@@ -1,0 +1,53 @@
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-row: 4 / 6;
+    grid-column: 1 / 5;
+}
+
+.sphere {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #20c7dc 60%, #7EEEE4 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sphere p {
+    font-size: smaller;
+}
+
+.sphere1 {
+    animation: float 1.5s alternate infinite;
+}
+.sphere2 {
+    animation: float 1.3s alternate infinite;
+}
+.sphere3 {
+    animation: float 1.4s alternate infinite;
+}
+
+@keyframes float {
+    0% { 
+        transform: translateY(-4px);
+        box-shadow: 
+            inset 0px -5px 5px 0px #6CD0D0,
+            0px 0px 50px #7EEEE4;        
+    }
+
+    100% { 
+        transform: translateY(4px);
+        box-shadow: 
+            inset 0px -20px 20px 0px #6CD0D0,
+            0px 0px 25px #7EEEE4;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #7EEEE4;
+    text-shadow: 2px 2px gray;
+}

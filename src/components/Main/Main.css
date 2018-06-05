@@ -1,108 +1,66 @@
-.main-container {
+.grid-container {
     height: 100vh;
     width: 100vw;
-    background: gray;
-}
-.true-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.wall {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(../../assets/imgs/wall.jpg);
+    //background: #444;
+    //background: url('../../assets/imgs/bg.jpg') no-repeat center center;
+    background: url('../../assets/imgs/bg1.jpg') no-repeat center center;
     background-size: cover;
-    transition: 3s;
-}
-.wall-left {
-    clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
-    //clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
-}
-.wall-right {
-    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
-    //clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
-}
-.open-left {
-    transform: translateX(-100%);
-}
-.open-right {
-    transform: translateX(100%);
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
-
-
-/*** LOCK ***/
-.lock-container {
-   position: absolute;
-   top: calc(100vh - 65%);
-   left: calc(100vw - 60%);
-   transition: 1s;
-}
-.ring {
-    cursor: pointer;
-    border-radius: 50%;
-    border: 10px dashed red;
-    animation: spin 20s linear infinite;
-}
-.lock {    
-    width: 275px;
-    height: 275px;
-}
-.lock-ring {
-    width: 225px;
-    height: 225px;
-}
-.lock-center {
-    width: 175px;
-    height: 175px;
-}
-.ball {
-    cursor: pointer;
-    position: absolute;
-    top: 72px;
-    left: 72px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: radial-gradient(circle, #f00 30%, #a00 70%);
-    box-shadow: inset -25px -70px 45px -30px #a00;
-}
-.ball p {
-    font-size: 2em;
-    color: white;
-    text-shadow: 0px 2px black;
+.border {
+    border: 1px solid #7EEEE4;
+    border-radius: 5px;
 }
 
-.ring:hover {
-    //transition: 1s;
-    //background: radial-gradient(circle, #f00 30%, #a00 70%);
-    //animation: spin 5s linear infinite;
+.window {
+    border-radius: 5px;
+    text-align: center;
+    min-width: 260px;
+    background: rgba(0,0,0,0.5);
 }
 
-/*** unlock transition ***/
-.unlock-ring {
-    transition: 1s;
-    border: 10px solid #080;
-}
-.unlock-lock {
-    transition: 1s;
-    background: rgba(0,255,0,1);
-}
-.unlock-ball {
-    transition: 1s;
-    border: 1px solid black;
-    background: radial-gradient(circle, #0f0 30%, #0a0 70%);
-    box-shadow: inset -25px -70px 45px -30px #0a0;
+.meta {
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
 }
 
+.meta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
 
+.intro {
+    color: white;    
+    background: rgba(0,0,0,0.5);
+    grid-row: 1 / 4;
+    grid-column: 2 / 4;
+    margin-top: 5%;
+}
+.intro {
+    text-align: center;
+}
+.roboto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: start;
+    line-height: 1em;
+    margin-left: 5%;
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
+}
 
-/*** ANIMATIONS ***/
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+.barcode {
+    grid-row: 1 / 4;
+    grid-column: 4 / 5;
+    font-family: 'Libre Barcode 39 Extended', sans-serif;
+    margin: auto;
+    overflow-wrap: break-word;
+    max-width: 350px;
 }

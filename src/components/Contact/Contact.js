@@ -1,7 +1,25 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import './Contact.css';
 
 class Contact extends Component {
+
+    
+    prevent = (event) => {
+        event.preventDefault();
+        
+        let db = 'https://teemakwebsite.firebaseio.com/';
+        
+        const message = { 
+            name: 'Tee',
+            message: 'You are hired!'
+        };
+
+        axios.post(`${db}messages.json`, message)
+            .then(res => console.log(res))
+            .catch(error => console.log(error));
+    };
+
     render() {
         return (
                     <div className="contact-container">
@@ -14,7 +32,7 @@ class Contact extends Component {
                                 <label>Message</label>
                                 <textarea />
 
-                                <button>SEND</button>
+                                <button onClick={this.prevent}>SEND</button>
                             </form>
 
                             <div className="bird-container">

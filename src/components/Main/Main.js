@@ -1,57 +1,41 @@
 import React, { Component } from 'react';
+
+import Nav from './Nav/Nav';
+import Meta from './Meta/Meta';
 import './Main.css';
 
 class Main extends Component {
-    state = {
-        classesLeft: ['wall', 'wall-left'],
-        classesRight: ['wall', 'wall-right'],
-        lock: ['lock', 'true-center', 'ring'],
-        lockRing: ['lock-ring', 'true-center', 'ring'],
-        lockCenter: ['lock-center', 'true-center', 'ring'],
-        ball: ['ball', 'true-center']
-    }
-    
-    openWalls = () => {
-        this.setState({
-            classesLeft: [...this.state.classesLeft, 'open-left'],
-            classesRight: [...this.state.classesRight, 'open-right'],
-            lock:   [...this.state.lock, 'unlock-ring', 'unlock-lock'],
-            lockRing: [...this.state.lockRing, 'unlock-ring'],
-            lockCenter: [...this.state.lockCenter, 'unlock-ring'],
-            ball: [...this.state.ball, 'unlock-ball']
-        });
-    }
+    render() {
+        return ( 
+                <div className="grid-container">
+                
+                <Meta />
+                <div className="intro border">
+                        <h1>TEE MAK</h1>
+                        <p className="roboto">
+                            I'm the letter after s. Golfers find me when they need time. 
+                        </p>
+                        <p className="roboto">
+                            My website was built using React. It is best experienced
+                            with a desktop display but can also be viewed on mobile
+                            devices.
+                        </p>
+                        <p className="roboto">
+                            Click on the contact link and leave me a message.
+                        </p>
+                </div>
 
-    concat = (arr) => {
-        return arr.join(' ');
-    }
+                <div className="barcode">
+                    <p>CONTACT</p>
+                    <p>954-707-9653</p>
+                    <p>bunth667@gmail.com</p>
+                </div>
 
-    render() {      
+                <Nav />
+                
+            </div> 
 
-        return (
-                <div className="main-container true-center">                    
-                    
-                    <div className="wall-container">
-                        <div className={this.concat(this.state.classesLeft)}></div>
-                        <div className={this.concat(this.state.classesRight)}></div>
-                    </div>
-
-                    <div className="lock-container true-center">
-                        
-                        <div onClick={this.openWalls} className={this.concat(this.state.lock)} >
-                            <div className={this.concat(this.state.lockRing)}>
-                                <div className={this.concat(this.state.lockCenter)}>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div onClick={this.openWalls} className={this.concat(this.state.ball)}>
-                            <p>ENTER</p>
-                        </div>
-                    </div>
-
-                </div>);
+            );
     }
 }
-
 export default Main;

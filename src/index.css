@@ -4,4 +4,6 @@ body {
   box-sizing: border-box;
   font-family: 'Orbitron', sans-serif;
   overflow: hidden;
+  font-size: 2em;
+  color: #7EEEE4;
 }
