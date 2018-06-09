@@ -2,56 +2,62 @@ import React, { Component } from 'react';
 import './Portfolio.css';
 
 class Portfolio extends Component {
+    state = {
+        img: ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/2000px-CSS3_logo_and_wordmark.svg.png",
+        "https://d2vqpl3tx84ay5.cloudfront.net/tumblr_lsus01g1ik1qies3uo1_400.png",
+        "https://cdn-images-1.medium.com/max/1200/1*T1b83o47E1AI0lTpwzHVvA.png",
+        "https://www.valentinog.com/blog/wp-content/uploads/2017/12/redux-logo.png",
+        "https://ih1.redbubble.net/image.109336634.1604/flat,550x550,075,f.u1.jpg",
+        "https://cdn.nucuta.com/2017/09/digitalocean_logo-841x349.jpg",
+        "https://tr3.cbsistatic.com/hub/i/r/2016/07/14/9b8f5520-b483-4159-8cee-c036485574e7/resize/770x/76f6684ad79e06c14ac4c99bbcc7485e/nginxhero.jpg"
+        ]
+
+    }
+
     render() {
         return (
                 <div className="portfolio-container">
+                    
                     <ul className="portfolio-items">
-                        <li>React</li>
-                        <li>Vue</li>
-                        <li>Angular</li>
-                        <li>FRONT END</li>
-                        <li>FULL STACK</li>
-                        <li>Games</li>
-                        <li>C++</li>
-                        <li>Java</li>
-                        <li>Mobile</li>
-                        <li>React</li>
-                        <li>Vue</li>
-                        <li>Angular</li>
-                        <li>FRONT END</li>
-                        <li>FULL STACK</li>
-                        <li>Games</li>
-                        <li>C++</li>
-                        <li>Java</li>
-                        <li>Mobile</li>
-                        <li>LAST</li>
+                        <li>NEXTOUR</li>
+                        <li>BASE</li>
+                        <li>REALTY</li>
                     </ul>
-                    <div className="portfolio-overview">
-                        <div className="portfolio-overview-card">
-                            <h1 className="portfolio-overview-card-title">React</h1>
-                            <img src={'http://placehold.it/400x200'} alt="project-screenshot"/>
-                            <div className="portfolio-overview-card-description">
-                                <p>
-                                    This is a simple to-do list app made using React.
-                                    Connected to a Firebase Server.
-                                    Complete CRUD functionality.
-                                </p>
+                    
+                    <div className="arrow-container">
+                        <div className="arrow"></div>
+                        <div className="arrow"></div>
+                        <div className="arrow"></div>
+                        <div className="arrow"></div>
+                        <div className="arrow"></div>
+                    </div>
 
-                                <hr />
+                    <div className="portfolio-card">
 
-                                <p>STACK</p>
-                                    <span className="logos">
-                                        <img src={"https://png.icons8.com/ios/50/9b59b6/react-native.png"} alt="react-logo" />
-                                        <img src={"https://png.icons8.com/nolan/50/9b59b6/google-plus.png"} alt="firebase-logo" />
-                                    </span>
-                                <div className="portfolio-overview-card-a">
-                                    <a href="/">Demo</a>
-                                    <a href="/">Github</a>
-                                    <a href="/">YouTube</a>
-                                </div>
-                            </div>
+                    </div>
+
+                    <div className="icons-container">
+                        <div className="icon">
+                            <img class="image" src={this.state.img[6]} alt="framework-icons" />
+                        </div>
+                        <div className="icon">
+                            <img class="image" src={this.state.img[7]} alt="framework-icons" />
+                        </div>
+                        <div className="icon">
+                            <img class="image" src={this.state.img[2]} alt="framework-icons" />
+                        </div>
+                        <div className="icon">
+                            <img class="image" src={this.state.img[3]} alt="framework-icons" />
+                        </div>
+                        <div className="icon">
+                            <img class="image" src={this.state.img[4]} alt="framework-icons" />
+                        </div>
+                        <div className="icon">
+                            <img class="image" src={this.state.img[5]} alt="framework-icons" />
                         </div>
                     </div>
+
                 </div>
                 );
     }

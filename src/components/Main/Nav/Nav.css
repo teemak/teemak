@@ -21,13 +21,13 @@
 }
 
 .sphere1 {
-    animation: float 1.5s alternate infinite;
+    animation: float 2s alternate infinite;
 }
 .sphere2 {
-    animation: float 1.3s alternate infinite;
+    animation: float 2.1s alternate infinite;
 }
 .sphere3 {
-    animation: float 1.4s alternate infinite;
+    animation: float 2.2s alternate infinite;
 }
 
 @keyframes float {
