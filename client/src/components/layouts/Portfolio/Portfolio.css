@@ -1,10 +1,27 @@
+.portfolio-icons-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .portfolio-container {
     display: flex;
     align-items: center;
     height: 100vh;
+    --border: 8px solid orange;
+}
+
+.background {
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 1000vh;
+    width: 1000vw;
     --cell: #222;
     --line: #494E4A;
-    --border: 8px solid orange;
     background: 
         radial-gradient(circle farthest-side at 0% 50%,var(--cell) 23.5%,
         rgba(240,166,17,0) 0)21px 30px,
@@ -35,6 +52,8 @@
         var(--cell) 98%,
         var(--line) 0%)0 0 var(--cell);
     background-size: 40px 60px;
+    transform: translate(-1000px, -500px) skewY(-15deg) rotate(15deg);
+    //transform: translate(0px, -500px) skewY(-15deg);
 }
 
 ul.portfolio-items {
@@ -47,8 +66,8 @@ ul.portfolio-items {
     flex-direction: column;
     justify-content: space-around;
     margin: 0;
-    width: 10vw;
-    border-right: var(--border);
+    padding: 15px;
+    //border-right: var(--border);
 }
 
 div.arrow-container {
@@ -70,17 +89,10 @@ div.arrow-container {
     padding: 30px;
     transform: rotate(-45deg);
 }
-.portfolio-card {
-    width: 30vw;
-    height: 90vh;
-    background: black;
-    border: var(--border);
-    border-radius: 5px;
-}
 .icons-container {
+    height: 40vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin: 0 auto; 
 }
@@ -97,5 +109,6 @@ div.arrow-container {
 
 .image {
     display: block;
-    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
 }

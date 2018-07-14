@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
-import Main from './components/Main/Main';
-import Portfolio from './components/Portfolio/Portfolio';
-import Social from './components/Social/Social';
-import Contact from './components/Contact/Contact'; 
+import Main from './components/layouts/Main/Main';
+import Portfolio from './components/layouts/Portfolio/Portfolio';
+import Social from './components/layouts/Social/Social';
+import Contact from './components/layouts/Contact/Contact'; 
 
 class App extends Component {
   render() {
