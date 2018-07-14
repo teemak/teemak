@@ -1,13 +1,11 @@
 ![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-## Welcome to GitHub Pages
+## Personal Portfolio
 
-You can use the [editor on GitHub](https://github.com/BAAMOSK/teemak/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is a full stack website. It uses the MERN stack. It is scalable. Uses continous integration. 100% mobile responsive.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### FRONTEND
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Uses React and Redux.
 
 ```markdown
 Syntax highlighted code block
