@@ -1,28 +1,23 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import Tessaract from '../../common/tessaract/tessaract';
 import './Contact.css';
 
 class Contact extends Component {
-
     
     prevent = (event) => {
         event.preventDefault();
-        
-        let db = 'https://teemakwebsite.firebaseio.com/';
         
         const message = { 
             name: 'Tee',
             message: 'You are hired!'
         };
 
-        axios.post(`${db}messages.json`, message)
-            .then(res => console.log(res))
-            .catch(error => console.log(error));
     };
 
     render() {
         return (
                     <div className="contact-container">
+                        <Tessaract />
                         
                         <div className="form-container">
                             <form className="contact-form">

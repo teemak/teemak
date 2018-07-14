@@ -51,6 +51,7 @@ class Meta extends Component {
         return (
                 <div className="meta">
                     <div className="meta-container">
+                        <div className="window border">ENGLISH</div>
                         <div className="window border">{this.state.month} {this.state.date} {this.state.year}</div>
                         <div className="window border">{this.state.day}</div>
                         <div className="window border">{this.state.hour}:{this.state.minutes}:{this.state.seconds} {this.state.meridiem}</div>

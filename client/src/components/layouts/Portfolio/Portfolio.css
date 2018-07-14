@@ -19,7 +19,7 @@
     left: 0;
     z-index: -1;
     height: 1000vh;
-    width: 1000vw;
+    width: 1000vh;
     --cell: #222;
     --line: #494E4A;
     background: 
@@ -52,7 +52,7 @@
         var(--cell) 98%,
         var(--line) 0%)0 0 var(--cell);
     background-size: 40px 60px;
-    transform: translate(-1000px, -500px) skewY(-15deg) rotate(15deg);
+    transform: translate(-1200px, -500px) skewY(-15deg) rotate(15deg);
     //transform: translate(0px, -500px) skewY(-15deg);
 }
 

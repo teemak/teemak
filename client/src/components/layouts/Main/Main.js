@@ -9,11 +9,6 @@ class Main extends Component {
     render() {
         return ( 
             <div id="grid-container">
-            {/*<video id="background-video" loop muted autoPlay>
-                    <source src={this.state.videoURL} type="video/mp4" />
-                    <source src={this.state.videoURL} type="video/ogg" />
-                    Your browser does not support the video tag.
-                </video>*/}
                 
                 <Meta />
                 <div className="intro border">

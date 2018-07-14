@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import Tessaract from '../../common/tessaract/tessaract';
 import './Social.css';
 
 class Social extends Component {
     render() {
         return (
                 <div className="social-container">
+                    <Tessaract />
                     <ul className="social-link-list">
                         <li>
                             <a className="link-style" href="/">

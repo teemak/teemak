@@ -1,0 +1,23 @@
+{
+  "name": "teemak",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baamosk/teemak.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baamosk/teemak/issues"
+  },
+  "homepage": "https://github.com/baamosk/teemak#readme",
+  "devDependencies": {
+    "jest": "^23.2.0"
+  }
+}

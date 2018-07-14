@@ -4,6 +4,7 @@ import Card from './card/Card';
 import './Portfolio.css';
 import { getProjects } from '../../../actions';
 import { Helmet } from 'react-helmet';
+import Tessaract from '../../common/tessaract/tessaract';
 
 class Portfolio extends Component {
     state = {
@@ -56,12 +57,10 @@ class Portfolio extends Component {
     }
 
     render() {
-        const propro = this.props.projects[0];
-        console.log(propro);
-
         return (
                 <div className="portfolio-container">
                 <div className="background">BACKGROUND</div>
+                    <Tessaract />
                     <Helmet>
                         <title>Portfolio</title>
                     </Helmet>
