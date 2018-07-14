@@ -1,42 +1,20 @@
-https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg
-![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg)
-.. image:: https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg   :alt: CircleCI
-image:https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg[CircleCI]
+![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+## Personal Portfolio
 
-## Welcome to GitHub Pages
+This is a full stack website. It uses the MERN stack. It is scalable. Uses continous integration. 100% mobile responsive.
 
-You can use the [editor on GitHub](https://github.com/BAAMOSK/teemak/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### FRONTEND
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Uses React and Redux.
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+ Uses prettier to help other devs follow Air BnB code style.
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### BACKEND
 
-### Jekyll Themes
+Backend uses NODE, EXPRESS, MONGOOSE. Uses JWT for authentication and security.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/BAAMOSK/teemak/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### TESTING
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Uses [JEST](https://https://jestjs.io) the complete testing framework.
