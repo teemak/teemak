@@ -17,4 +17,4 @@ Backend uses NODE, EXPRESS, MONGOOSE. Uses JWT for authentication and security.
 
 ### TESTING
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Uses [JEST](https://https://jestjs.io) the complete testing framework.
