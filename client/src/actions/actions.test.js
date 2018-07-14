@@ -1,1 +1,3 @@
-it('sample test', () => {});
+it('sample test', () => {
+    expect('1').toEqual('3');
+});
