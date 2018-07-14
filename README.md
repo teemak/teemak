@@ -1,3 +1,4 @@
+https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/BAAMOSK/teemak/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
